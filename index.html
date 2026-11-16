@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>POTSHOW Podcast Network</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="w nav">
+ <a class="logo" href="#beranda" aria-label="POTSHOW"><img data-slot="logo" alt="POTSHOW"></a>
+ <nav id="nv"><ul><li><a class="on" href="#beranda">Beranda</a></li><li><a href="#podcast">Podcast</a></li><li><a href="#tentang">Tentang Kami</a></li><li><a href="#program">Program</a></li><li><a href="#testi">Halaman</a></li><li><a href="#kontak">Kontak</a></li></ul></nav>
+ <div class="nr"><a class="btn p dn" href="#sponsor" style="padding:9px 22px">Donasi</a><button class="ib" id="mb" aria-label="Menu">☰</button></div>
+</div></header>
+
+<main>
+<section class="hero" id="beranda"><div class="hbg" aria-hidden="true"><img data-slot="hero" alt="Hero Image"></div><div class="w">
+ <span class="chip">● Sedang mengudara 24/7 · audio spasial berkualitas</span>
+ <h1>SELAMI DUNIA PODCAST KAMI, <span>SUARA, CERITA &amp; REALITA TERBAIK</span></h1>
+ <p>Temukan ribuan cerita, wawasan mendalam, dan hiburan dari para podcaster terbaik Indonesia. Dengarkan kapan saja, di mana saja.</p>
+ <div class="bt"><a class="btn p" href="#tentang">Pelajari Lebih Lanjut</a><a class="btn o" href="#podcast">Lihat Semua</a></div>
+</div></section>
+<div class="w float"><div class="glass fw">
+ <div><small>Tersedia di</small><div class="sl">
+<span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1ed760"/><path d="M5.5 9c4.2-1.2 9-.8 13 1.3M6.3 12.5c3.4-.9 7-.6 10.2 1M7 15.8c2.8-.7 5.5-.4 8 .8" stroke="#1f0f3a" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>Spotify</span>
+<span><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#b150e7"/><path d="M7.5 12a4.5 4.5 0 119 0M5 12a7 7 0 1114 0" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/><circle cx="12" cy="11" r="1.8" fill="#fff"/><path d="M12 13.5v5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>Apple Podcasts</span>
+<span><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#fff"/><g stroke-width="2.2" stroke-linecap="round" fill="none"><path d="M5 11v2" stroke="#4285f4"/><path d="M8.5 8v8" stroke="#ea4335"/><path d="M12 5.5v13" stroke="#4285f4"/><path d="M15.5 8v8" stroke="#fbbc04"/><path d="M19 11v2" stroke="#34a853"/></g></svg>Google Podcasts</span>
+<span><svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#ff5500"/><path d="M4.5 15v-2.5M6.5 16v-5M8.5 16v-6" stroke="#fff" stroke-width="1.3" stroke-linecap="round" fill="none"/><path d="M10.5 16V9.5a4.5 4.5 0 018.5 2 2.2 2.2 0 01-.5 4.5z" fill="#fff"/></svg>SoundCloud</span>
+</div></div>
+ <div style="display:flex;align-items:center;gap:14px"><div class="eq" aria-hidden="true" id="eq"></div><small style="margin:0">LIVE<br>40,2K</small></div>
+</div></div>
+
+<section id="podcast"><div class="w">
+ <div class="row"><h2>Episode Terpopuler</h2>
+  <div class="mini"><button aria-label="Sebelumnya" id="pv"><svg class="i" viewBox="0 0 24 24"><path d="M5 5v14M19 12L9 5v14z"/></svg></button><button id="pp" aria-label="Putar / Jeda"></button><button aria-label="Berikutnya" id="nx"><svg class="i" viewBox="0 0 24 24"><path d="M19 5v14M5 5l10 7-10 7z"/></svg></button><span id="now">Memuat…</span><div class="bar"><i id="pr"></i></div><button aria-label="Volume" id="vl"><svg class="i" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9zM17 9a4 4 0 010 6"/></svg></button></div>
+ </div>
+ <div class="fl" id="fl"><button class="on" data-c="all">Semua</button><button data-c="Komedi">Komedi &amp; Tongkrongan</button><button data-c="Horor">Horor &amp; Misteri</button><button data-c="Bisnis">Pengembangan Diri &amp; Bisnis</button><button data-c="Politik">Politik &amp; Berita</button></div>
+ <div class="g4" id="eps"></div>
+</div></section>
+
+<section id="tentang"><div class="w c3">
+ <div><span class="chip">Standar pertama baru</span><h2 style="font-size:clamp(28px,3.2vw,40px)">Headline Epik, Selalu Segar, Selalu Ada</h2>
+  <p>POTSHOW menetapkan patokan baru dalam industri siaran tanah air: kualitas audio spasial 320 kbps, narasumber tanpa batas, dan cerita berbasis riset.</p>
+  <p style="margin-top:12px">Dari studio berstandar dunia hingga distribusi multi-platform, tak ada momen yang terlewat.</p>
+  <a class="btn p" style="margin-top:22px" href="#kreator">Lebih Lanjut</a>
+  <div class="sp"><span>TELKOMAUDIO</span><span>VIBEWAVE</span><span>SOUNDFORGE</span><span>JKT.FM</span></div></div>
+ <div class="ph tall"><img data-slot="pod" alt="Podcaster berbicara ke mikrofon studio"></div>
+ <div class="card st"><button class="btn p s" id="pl2" style="align-self:flex-start">▶ Putar</button>
+  <div><b>17.5M+</b><span>Subscriber</span></div><div><b>1.5k+</b><span>Total Episode</span></div>
+  <div class="av"><i style="background:#f71a67"></i><i style="background:#f472b6"></i><i style="background:#fcb53b"></i><i style="background:#fcb53b"></i><em>+12K pendengar baru</em></div></div>
+</div></section>
+
+<section id="kreator" style="padding-top:0"><div class="w c2">
+ <div class="hs" id="hs"></div>
+ <div><span class="chip">Talenta pilihan</span><h2>Suara Bersatu, Cerita Tanpa Batas</h2>
+  <p>Setiap host di jaringan POTSHOW dipilih karena karakter dan keahliannya. Kami memberi ruang bagi kreator paling autentik untuk bersuara tanpa dibatasi algoritma.</p>
+  <a class="btn" style="margin-top:20px" href="#kreator">Lihat Semua Host</a></div>
+</div></section>
+
+<section style="padding-top:0"><div class="w"><div class="card sb">
+ <div><span class="chip">Berlangganan newsletter</span><h2>Apa Yang Ingin Anda Dengarkan Hari Ini?</h2><p style="font-size:13px;margin-top:8px">Dapatkan episode terbaru setiap pekan langsung ke kotak masuk Anda.</p></div>
+ <div><form class="in" id="nf" novalidate><input id="ne" type="email" placeholder="Masukkan alamat email Anda..." aria-label="Email"><button class="btn p" type="submit">Berlangganan</button></form><p class="m" id="nm"></p></div>
+</div></div></section>
+
+<section id="program" style="padding-top:0"><div class="w c3">
+ <div><span class="chip">Komunitas interaktif</span><h2 style="font-size:clamp(28px,3.2vw,40px)">Mengapa Ragu? Bergabunglah dengan Master Podcast</h2>
+  <p style="font-size:14px">Dengarkan episode terbaik, tanyakan langsung pertanyaanmu, dan dapatkan akses ke studio serta komunitas podcaster.</p>
+  <a class="btn p" style="margin-top:20px" href="#kontak">Gabung PotShow VIP</a></div>
+ <div class="ph sq"><img data-slot="mix" alt="Mixer audio studio"></div>
+ <div class="ac" id="ac"></div>
+</div></section>
+
+<section id="testi" style="padding-top:0"><div class="w">
+ <div class="ct"><span class="chip">Suara dari komunitas</span><h2>Tampil Bersinar, Bicara Lantang</h2><p style="font-size:14px">Apa kata komunitas setia POTSHOW di seluruh Nusantara.</p></div>
+ <div class="g3" id="tq"></div>
+</div></section>
+
+<section style="padding-top:0"><div class="w">
+ <div class="ct"><span class="chip">Grup episode</span><h2>Masuk ke Topik yang Sedang Tren</h2></div>
+ <div class="pl" id="pl"></div>
+</div></section>
+
+<section id="kontak" style="padding-top:0"><div class="w c2" style="align-items:start">
+ <div><span class="chip">Kolaborasi &amp; media</span><h2>Hubungi Kami</h2><p style="margin-bottom:22px">Punya pertanyaan atau ide kolaborasi? Tim kami membalas dalam 1×24 jam.</p>
+  <div class="card ci"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s7-6 7-12a7 7 0 10-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><b>Studio Utama &amp; Kantor</b><p>Jl. Everpark No. 28, Kebayoran Baru, Jakarta Selatan 12190</p></div></div>
+  <div class="card ci"><span class="ic"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><b>Email Resmi</b><p>halo@potshow.id · sponsorship@potshow.id</p></div></div>
+  <div class="card ci"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span><div><b>Telepon &amp; WhatsApp Studio</b><p>+62 21 5555 0123 · Senin–Jumat, 09.00–18.00 WIB</p></div></div></div>
+ <form class="card f" id="cf" novalidate><h3 style="font-size:20px">Kirimkan Pesan Anda</h3>
+  <div class="r2"><div><label for="cn">Nama Lengkap</label><input id="cn" placeholder="Contoh: Budiman Satria"></div><div><label for="ce">Alamat Email</label><input id="ce" type="email" placeholder="nama@domain.com"></div></div>
+  <div><label for="cs">Subjek Pesan</label><input id="cs" placeholder="Kolaborasi, sponsor, atau pertanyaan umum"></div>
+  <div><label for="cm">Pesan</label><textarea id="cm" placeholder="Tuliskan pesan Anda di sini..."></textarea></div>
+  <button class="btn p" type="submit" style="justify-content:center">Kirim Pesan</button><p class="m" id="cg"></p></form>
+</div></section>
+
+<section id="sponsor" style="padding:0"><div class="w"><div class="card bn"><div><h3>Percepat Dampak Anda. Jadilah Sponsor!</h3><p>Jangkau jutaan pendengar bersama kreator terdepan Indonesia.</p></div><a class="btn p" href="#kontak">Daftar Sekarang</a></div></div></section>
+</main>
+
+<footer><div class="w"><div class="fg">
+ <div><a class="logo" href="#beranda" aria-label="POTSHOW"><img data-slot="logo" alt="POTSHOW"></a><p>Jaringan podcast independen premium. Menyuarakan cerita, riset, dan hiburan terbaik Indonesia.</p>
+  <div class="so">
+   <!-- GANTI alamat di bawah dengan akun resmi POTSHOW -->
+   <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="i" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/></svg></a>
+   <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><svg class="i" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a>
+   <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X"><svg class="i" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></a>
+   <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="i" viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 00-4 4v3H7v4h3v5h4v-5h3l1-4h-4V8z"/></svg></a>
+  </div></div>
+ <div><h4>Navigasi</h4><ul><li><a href="#beranda">Beranda</a></li><li><a href="#podcast">Podcast</a></li><li><a href="#tentang">Tentang Kami</a></li><li><a href="#program">Program</a></li></ul></div>
+ <div><h4>Ekosistem</h4><ul><li><a href="#kontak">Studio Kami</a></li><li><a href="#tentang">Spatial Audio</a></li><li><a href="#program">Komunitas Discord</a></li><li><a href="#sponsor">Donasi</a></li></ul></div>
+ <div><h4>Bantuan &amp; Legal</h4><ul><li><button class="lnk" data-info="syarat">Syarat Layanan</button></li><li><button class="lnk" data-info="privasi">Kebijakan Privasi</button></li><li><button class="lnk" data-info="faq">FAQ</button></li><li><a href="#kontak">Kontak</a></li></ul></div>
+</div><div class="cp"><span>© 2026 POTSHOW Network. Seluruh hak cipta dilindungi.</span><span>Dibuat untuk para pendengar Indonesia</span></div></div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
